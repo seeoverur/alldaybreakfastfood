@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Day Breakfast in Charleston, SC | All Day Breakfast Food</title>
+<meta name="description" content="A Charleston guide to breakfast served all day: Sweet Palm Coffee & Food on King Street downtown, plus late-morning kitchens in West Ashley, Mount Pleasant, James Island, Folly Beach and North Charleston.">
+<link rel="canonical" href="https://alldaybreakfastfood.com/">
+<meta property="og:title" content="All Day Breakfast in Charleston, SC | All Day Breakfast Food">
+<meta property="og:description" content="A Charleston guide to breakfast served all day: Sweet Palm Coffee & Food on King Street downtown, plus late-morning kitchens in West Ashley, Mount Pleasant, James Island, Folly Beach and North Charleston.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alldaybreakfastfood.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--teal:#5b858c;--teal-dark:#456b71;--pink:#e3a39b;--ink:#0b0b0b;--muted:#6b7280;--chip:#6d7c93;}
+*{box-sizing:border-box}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;font-size:1.125rem;line-height:1.8;}
+h1,h2,h3,h4,.display-font{font-family:'Outfit','Inter',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1.1;}
+a{color:var(--teal-dark);text-underline-offset:3px;}
+a:hover{color:var(--ink);}
+.topbar{background:#000;text-align:center;padding:.65rem 1rem;font-size:.95rem;letter-spacing:.02em;text-transform:uppercase;}
+.topbar a{color:#fff;text-decoration:none;}
+.topbar a:hover{text-decoration:underline;color:#fff;}
+.site-nav{padding:1.6rem 0;}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);}
+.brand svg{width:54px;height:54px;flex:none;}
+.brand-text{font-family:'Outfit',sans-serif;font-weight:800;font-size:1.3rem;line-height:1.05;}
+.brand-text small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-top:.25rem;}
+.site-nav .nav-link{color:var(--ink);font-size:1.15rem;padding:.4rem .85rem!important;}
+.site-nav .nav-link:hover,.site-nav .nav-link.active{color:var(--teal);}
+.btn-pill{display:inline-block;border:2px solid var(--teal);color:var(--teal);background:#fff;border-radius:22px;padding:.85rem 1.9rem;font-weight:600;text-decoration:none;transition:.15s;}
+.btn-pill:hover{background:var(--teal);color:#fff;}
+.btn-block-teal{display:inline-flex;align-items:center;justify-content:center;background:var(--teal);color:#fff;border-radius:0 0 26px 26px;padding:2.6rem 2.6rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;min-width:230px;}
+.btn-block-teal:hover{background:var(--teal-dark);color:#fff;}
+.btn-chip{display:inline-flex;align-items:center;justify-content:center;background:var(--teal);color:#fff;border:2px solid #fff;border-radius:20px;padding:1rem 2.2rem;font-weight:600;text-decoration:none;}
+.btn-chip:hover{background:var(--teal-dark);color:#fff;}
+.hero-wrap{padding:0 6vw;}
+.hero{position:relative;height:620px;background:url('images/hero.jpg') center/cover no-repeat,linear-gradient(135deg,#e7d6bf 0%,#cfdcdc 55%,#9fbcc0 100%);}
+.hero.short{height:360px;}
+.hero-title{position:absolute;right:5%;bottom:70px;margin:0;color:#fff;font-size:clamp(2.2rem,5.2vw,4.4rem);font-weight:800;text-transform:uppercase;text-shadow:0 2px 18px rgba(0,0,0,.35);text-align:right;max-width:90%;}
+.hero-actions{display:flex;gap:1.6rem;align-items:flex-start;justify-content:flex-end;padding:0 4%;margin-top:-34px;position:relative;z-index:2;flex-wrap:wrap;}
+.hero-actions .btn-chip{margin-top:-28px;}
+.section{padding:5rem 0;}
+.section.tight{padding:3.5rem 0;}
+.big-title{font-size:clamp(2.4rem,5.4vw,4.6rem);font-weight:800;}
+.mid-title{font-size:clamp(1.9rem,3.4vw,2.9rem);font-weight:800;margin-bottom:1.2rem;}
+.lead-copy{font-size:1.35rem;line-height:1.95;}
+.accent-line{color:var(--teal);font-weight:700;font-size:1.4rem;line-height:1.7;}
+.accent-line a{color:var(--teal);text-decoration:none;}
+.accent-line a:hover{text-decoration:underline;}
+.map-frame{width:100%;height:470px;border:0;display:block;}
+.photo{width:100%;min-height:420px;height:100%;background-size:cover;background-position:center;}
+.p1{background-image:url('images/around-town.jpg'),linear-gradient(160deg,#f0dfc8,#e3a39b);}
+.p2{background-image:url('images/sweet-palm.jpg'),linear-gradient(160deg,#cfe0df,#5b858c);}
+.p3{background-image:url('images/biscuits.jpg'),linear-gradient(160deg,#f5e9d3,#d9b98a);}
+.p4{background-image:url('images/dinner-table.jpg'),linear-gradient(160deg,#dfe6e6,#8fa9ad);}
+.p5{background-image:url('images/about.jpg'),linear-gradient(160deg,#f0dfc8,#9fbcc0);}
+.area-tag{display:inline-block;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem;}
+.rule{border:0;border-top:1px solid #e5e7eb;margin:0;}
+.tile{display:block;height:100%;border:2px solid var(--teal);border-radius:24px;padding:2.2rem 2rem;text-decoration:none;color:var(--ink);transition:.15s;}
+.tile:hover{background:var(--teal);color:#fff;}
+.tile h3{font-size:1.6rem;margin-bottom:.6rem;}
+.tile p{margin:0;font-size:1.05rem;line-height:1.7;}
+.band{background:#f6f3ee;}
+footer{padding:4.5rem 0 3rem;text-align:center;}
+footer h4{font-size:1.5rem;font-weight:700;margin-bottom:2.2rem;}
+footer p,footer li{color:var(--muted);font-size:1.15rem;line-height:1.9;margin:0;}
+footer ul{list-style:none;padding:0;margin:0;}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--teal);}
+.circles{display:flex;justify-content:center;gap:.8rem;margin:3.5rem 0 3rem;}
+.circles a{width:46px;height:46px;border-radius:50%;background:var(--chip);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.25rem;}
+.circles a:hover{background:var(--teal);color:#fff;}
+.copyright{color:var(--muted);font-size:1.1rem;}
+@media (max-width:991px){
+ .hero{height:420px}.hero.short{height:260px}.hero-title{bottom:40px}
+ .btn-block-teal{padding:1.6rem 1.8rem;min-width:0}.hero-actions{justify-content:center;gap:1rem}
+ .hero-actions .btn-chip{margin-top:0}
+ .section{padding:3.2rem 0}.lead-copy{font-size:1.15rem}.accent-line{font-size:1.2rem}
+ .photo{min-height:300px}.map-frame{height:360px}
+ footer h4{margin-bottom:1rem;margin-top:1.5rem}
+ .site-nav .btn-pill{margin-top:.8rem}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "All Day Breakfast Food", "url": "https://alldaybreakfastfood.com/", "description": "A guide to all day breakfast in Charleston, SC."}</script>
+</head>
+<body>
+
+<div class="topbar"><a href="https://www.sweetpalmcoffee.com" target="_blank" rel="noopener">Downtown pick: Sweet Palm Coffee &amp; Food &middot; 471 King Street</a></div>
+
+<nav class="navbar navbar-expand-lg site-nav">
+  <div class="container-fluid px-4 px-lg-5">
+    <a class="brand" href="index.html"><svg viewBox="0 0 60 60" aria-hidden="true"><rect x="3" y="3" width="54" height="54" rx="14" fill="#fff" stroke="#0b0b0b" stroke-width="2.5"/><path d="M30 13c9 0 17 6 17 17s-8 17-17 17-17-7-17-17 8-17 17-17z" fill="#f6f3ee" stroke="#5b858c" stroke-width="2.5"/><circle cx="31" cy="30" r="7.5" fill="#e3a39b"/></svg><span class="brand-text">All Day<br>Breakfast Food<small>Charleston, SC</small></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="all-day-breakfast.html">All Day Breakfast</a></li><li class="nav-item"><a class="nav-link" href="popular-restaurants.html">Popular Restaurants</a></li><li class="nav-item"><a class="nav-link" href="what-to-order.html">What to Order</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn-pill" href="https://www.sweetpalmcoffee.com" target="_blank" rel="noopener">Sweet Palm Coffee</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="hero-wrap">
+  <div class="hero"><p class="hero-title display-font">Breakfast,<br>any hour</p></div>
+  <div class="hero-actions">
+    <a class="btn-block-teal" href="all-day-breakfast.html">Find Breakfast</a>
+    <a class="btn-chip" href="popular-restaurants.html">Popular Restaurants</a>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-7 text-center">
+        <h1 class="big-title mb-5">All Day Breakfast in Charleston, SC</h1>
+        <p class="lead-copy">Charleston kitchens tend to stop cracking eggs around eleven. This guide tracks the ones that keep going: the cafes, diners and biscuit shops around the Lowcountry where a breakfast burrito, a plate of shrimp and grits or a stack of pancakes is still on the menu at two in the afternoon.</p>
+        <p class="accent-line my-4"><a href="https://www.sweetpalmcoffee.com" target="_blank" rel="noopener">471 King Street, Charleston, SC 29403</a></p>
+        <p class="lead-copy">Downtown, the pick is <a href="https://www.sweetpalmcoffee.com" target="_blank" rel="noopener">Sweet Palm Coffee &amp; Food</a> on King Street. It is a quick-serve cafe that makes breakfast sandwiches, breakfast burritos, egg bites and hash browns from open to close, alongside lattes, matcha, iced coffee and dirty sodas. Order at the counter, eat in or carry it down King. The <a href="https://www.sweetpalmcoffee.com/menu" target="_blank" rel="noopener">menu</a> also runs to chicken wraps, bowls, turkey and swiss melts, cinnamon rolls and ice cream sundaes, so the table that can't agree on a meal still eats.</p>
+        <p class="accent-line mt-4">Open daily from 8:30am. Monday to Thursday until 4pm, Friday to Sunday until 5pm.</p>
+      </div>
+      <div class="col-lg-5"><iframe class="map-frame" loading="lazy" title="Map to Sweet Palm Coffee and Food, 471 King Street, Charleston" src="https://www.google.com/maps?q=Sweet+Palm+Coffee+%26+Food,+471+King+St,+Charleston,+SC+29403&z=15&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="section">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5"><div class="photo p1" role="img" aria-label="Diner breakfast plate with eggs, grits and a biscuit"></div></div>
+      <div class="col-lg-7">
+        <h2 class="mid-title">Late Breakfast Beyond the Peninsula</h2>
+        <p>Cross a bridge and the options open up. West Ashley has the densest run of them, led by <a href="https://www.earlybirddiner.com" target="_blank" rel="noopener">Early Bird Diner</a> on Savannah Highway, where chicken and waffles come out at dinner time, plus <a href="https://metrodiner.com/locations/south-carolina/west-ashley/" target="_blank" rel="noopener">Metro Diner</a> and <a href="https://flyingbiscuit.com/locations-2/west-ashley-charleston" target="_blank" rel="noopener">Flying Biscuit Caf&eacute;</a>. In Mount Pleasant, <a href="https://www.viciousbiscuit.com" target="_blank" rel="noopener">Vicious Biscuit</a> and <a href="https://www.vintagecoffeecafe.com" target="_blank" rel="noopener">Vintage Coffee Cafe</a> keep morning plates going until they lock the doors. On James Island there is <a href="https://www.millersallday.com" target="_blank" rel="noopener">Millers All Day</a>, out at Folly Beach <a href="https://www.lostdogfollybeach.com" target="_blank" rel="noopener">Lost Dog Cafe</a>, and in Park Circle <a href="https://www.thejunctionkitchen.com" target="_blank" rel="noopener">The Junction Kitchen &amp; Provisions</a> has been feeding North Charleston eggs past noon since 2015.</p>
+        <p>The full area-by-area rundown, with addresses and what each kitchen does best, is on the guide page.</p>
+        <a class="btn-pill mt-2" href="all-day-breakfast.html">See every area</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <h2 class="mid-title text-center mb-5">More From the Guide</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><a class="tile" href="popular-restaurants.html"><h3>Popular Restaurants</h3><p>Charleston's busiest dining rooms with menus wide enough for a mixed group, from Shem Creek to East Bay Street.</p></a></div>
+      <div class="col-md-4"><a class="tile" href="what-to-order.html"><h3>What to Order</h3><p>Shrimp and grits, cathead biscuits, chicken and waffles: the Lowcountry morning plates that hold up after lunch.</p></a></div>
+      <div class="col-md-4"><a class="tile" href="about.html"><h3>About the Guide</h3><p>How places make the list, what counts as all day, and why downtown gets a single recommendation.</p></a></div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6"><h4>Downtown Pick</h4><p><a href="https://www.sweetpalmcoffee.com" target="_blank" rel="noopener">Sweet Palm Coffee &amp; Food</a><br>471 King Street<br>Charleston, SC 29403</p></div>
+      <div class="col-lg-3 col-md-6"><h4>Areas Covered</h4><p>Downtown, West Ashley,<br>Mount Pleasant, James Island,<br>Folly Beach, North Charleston,<br>Summerville</p></div>
+      <div class="col-lg-3 col-md-6"><h4>Guide Pages</h4><ul><li><a href="all-day-breakfast.html">All Day Breakfast</a></li><li><a href="popular-restaurants.html">Popular Restaurants</a></li><li><a href="what-to-order.html">What to Order</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h4>Good to Know</h4><p>Hours and menus change.<br>Check with the restaurant<br>before you drive over.</p></div>
+    </div>
+    <div class="circles">
+      <a href="all-day-breakfast.html" aria-label="All day breakfast guide"><i class="bi bi-egg-fried"></i></a>
+      <a href="popular-restaurants.html" aria-label="Popular restaurants"><i class="bi bi-shop"></i></a>
+      <a href="what-to-order.html" aria-label="What to order"><i class="bi bi-cup-hot"></i></a>
+    </div>
+    <p class="copyright">Copyright &copy; 2026 All Day Breakfast Food. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
